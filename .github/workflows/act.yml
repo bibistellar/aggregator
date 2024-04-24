@@ -26,7 +26,7 @@ jobs:
     - name: Collect proxies
       run: |
         cd aggregate
-        python -u subscribe/collect.py -s  
+        python -u subscribe/collect.py  
 
     - name: Configure Git
       run: |
@@ -36,5 +36,8 @@ jobs:
     - name: Commit and push changes
       run: |
         git add aggregate/data/proxies.yaml
+        git add aggregate/data/subscribes.yaml
+        git add aggregate/data/domains.yaml
+        git add aggregate/data/valid-domains.yaml
         git commit -m "Add generated output.yaml"
         git push
