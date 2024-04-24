@@ -1,1 +1,45 @@
-
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 日本01|中转
+  password: 13a86c70-e77c-4087-b349-b2cb19c09446
+  port: 45514
+  server: c3b76a74-74d1-4077-af40-4f95d2e93f43.5674567.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 美国01|中转
+  password: 13a86c70-e77c-4087-b349-b2cb19c09446
+  port: 25485
+  server: f339f3e7-5520-4268-8ca7-b0dcde7a402d.5674567.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 美国02|中转
+  password: 13a86c70-e77c-4087-b349-b2cb19c09446
+  port: 17585
+  server: 0f826e.gorelay.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 新加坡01|中转
+  password: 13a86c70-e77c-4087-b349-b2cb19c09446
+  port: 25839
+  server: 82ebf39a-b624-463d-a4da-3d644a4749a9.5674567.xyz
+  type: ss
+  udp: true
+- name: 香港01 | HKBN | 1X
+  password: 400ddca4-eb72-4326-aa84-7ce58afe8eff
+  port: 42030
+  server: hkg01.service.nahidacloud.top
+  skip-cert-verify: true
+  sni: hkg01.service.nahidacloud.top
+  type: trojan
+  udp: true
+- name: 美国01 | 1X
+  password: 400ddca4-eb72-4326-aa84-7ce58afe8eff
+  port: 443
+  server: us01.service.nahidacloud.top
+  skip-cert-verify: true
+  sni: us01.service.nahidacloud.top
+  type: trojan
+  udp: true
