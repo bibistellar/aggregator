@@ -34,9 +34,9 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git add aggregator/data/proxies.yaml
-        git add aggregator/data/subscribes.txt
-        git add aggregator/data/domains.txt
-        git add aggregator/data/valid-domains.txt
+        git add aggregate/data/proxies.yaml
+        git add aggregate/data/subscribes.txt
+        git add aggregate/data/domains.txt
+        git add aggregate/data/valid-domains.txt
         git commit -m "Add generated output.yaml"
         git push
