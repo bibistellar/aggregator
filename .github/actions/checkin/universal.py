@@ -34,11 +34,6 @@ PATH = os.path.abspath(os.path.dirname(__file__))
 
 
 def extract_domain(url) -> str:
-    print(url)
-    if not url or not re.match(
-        "^(https?:\/\/(([a-zA-Z0-9]+-?)+\.)+[a-zA-Z]+)(:\d+)?(\/.*)?(\?.*)?(#.*)?$", url
-    ):
-        return ""
 
     start = url.find("//")
     if start == -1:
