@@ -13,13 +13,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: master
 
       - name: Checkin
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
           architecture: "x64"
+          debug: true
       - run: python ./.github/actions/checkin/universal.py
 
       - name: Timestamp
